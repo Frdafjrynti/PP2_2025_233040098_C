@@ -32,9 +32,9 @@ public class Tugas {
                 JButton buttonCenter = new JButton("CENTER");
 
                 // Aksi tombol SOUTH (sudah ada di latihan4)
-                buttonSouth.addActionListener(e -> {
-                    label.setText("Tombol SOUTH diklik!");
-                });
+//                buttonSouth.addActionListener(e -> {
+//                    label.setText("Tombol SOUTH diklik!");
+//                });
 
                 // Aksi tombol NORTH
                 buttonNorth.addActionListener(e -> {
