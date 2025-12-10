@@ -62,38 +62,10 @@ public class TugasModul7 extends JFrame{
         JButton btnSimpan = new JButton("Simpan Data");
         panel.add(btnSimpan);
 
-        // Di method createInputPanel()
         // baris untuk tombol reset 
         panel.add(new JLabel("")); // Placeholder agar tombol Reset di kanan
-        JButton btnReset = new JButton("Reset Input");
+        JButton btnReset = new JButton("Reset Input"); // Tugas 4: Tombol Reset
         panel.add(btnReset);
-
-        // event handling tombol reset 
-      // event handling tombol reset 
-btnReset.addActionListener(new ActionListener() {
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        // Konfirmasi sebelum reset
-        int confirm = JOptionPane.showConfirmDialog(
-            TugasModul7.this,
-            "Apakah Anda yakin ingin mereset semua inputan?",
-            "Konfirmasi Reset",
-            JOptionPane.YES_NO_OPTION
-        );
-        
-        if (confirm == JOptionPane.YES_OPTION) {
-            txtNama.setText("");
-            txtNilai.setText("");
-            cmbMatkul.setSelectedIndex(0);
-            JOptionPane.showMessageDialog(
-                TugasModul7.this,
-                "Inputan berhasil direset!",
-                "Sukses",
-                JOptionPane.INFORMATION_MESSAGE
-            );
-        }
-    }
-});
 
 
         // event handling tombol simpan
